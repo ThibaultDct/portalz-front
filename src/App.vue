@@ -1,28 +1,38 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <v-app>
+    <template v-if="sessionExists">
+      <Sidebar/>
+      <RouterContent/>
+    </template>
+    <template v-else>
+      <p>ET NON</p>
+    </template>
+    <Footer/>
+  </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Sidebar from "@/components/Sidebar";
+import RouterContent from "@/components/RouterContent";
+import Footer from "@/components/Footer";
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
-</script>
+  name: "App",
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+  components: {Footer, RouterContent, Sidebar},
+
+  methods: {
+    isOk: function () {
+      return this.$session.exists();
+    }
+  },
+
+  computed: {
+    sessionExists() {
+      console.log(this.$session.exists())
+      return this.$session.exists();
+    }
+  },
+
+};
+</script>
