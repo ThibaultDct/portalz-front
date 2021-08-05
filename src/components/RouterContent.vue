@@ -1,7 +1,7 @@
 <template>
   <!------------ CONTENT ------------>
-  <v-content>
-    <v-container class='m-2'>
+  <v-main>
+    <v-container class='m-2 mt-0 pt-0'>
       <v-row class="fill-height">
         <v-col>
           <transition name="fade">
@@ -10,7 +10,7 @@
         </v-col>
       </v-row>
     </v-container>
-  </v-content>
+  </v-main>
   <!--------------------------------->
 </template>
 

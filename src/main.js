@@ -7,6 +7,8 @@ import VueSidebarMenu from 'vue-sidebar-menu'
 import VueApexCharts from 'vue-apexcharts'
 import VuePipeline from 'vue-pipeline'
 import VueAvatar from 'vue-avatar'
+import axios from 'axios'
+import VueAxios from 'vue-axios'
 import { BreedingRhombusSpinner, TrinityRingsSpinner } from 'epic-spinners';
 import VueSession from 'vue-session'
 import router from './router/index'
@@ -20,6 +22,7 @@ Vue.use(VuePipeline)
 Vue.use(VueAvatar)
 Vue.use(VueSession)
 Vue.use(Vuex)
+Vue.use(VueAxios, axios)
 
 Vue.component('apexchart', VueApexCharts)
 Vue.component('breeding-rhombus-spinner', BreedingRhombusSpinner)

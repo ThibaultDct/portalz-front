@@ -1,5 +1,5 @@
 <template>
-  <v-container>
+  <v-container class="ml-5">
     <!-- Stack the columns on mobile by making one full-width and the other half-width -->
     <v-row>
       <v-col

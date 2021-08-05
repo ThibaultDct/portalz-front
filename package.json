@@ -9,11 +9,13 @@
   },
   "dependencies": {
     "apexcharts": "^3.26.3",
+    "axios": "^0.21.1",
     "core-js": "^3.6.5",
     "epic-spinners": "^1.1.0",
     "vue": "^2.6.11",
     "vue-apexcharts": "^1.6.1",
     "vue-avatar": "^2.3.3",
+    "vue-axios": "^3.2.5",
     "vue-pipeline": "^1.0.12",
     "vue-router": "^3.5.1",
     "vue-session": "^1.0.0",

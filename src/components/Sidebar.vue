@@ -1,5 +1,4 @@
 <template>
-  <!------------ SIDE MENU ------------>
   <v-navigation-drawer
       v-model="drawer"
       :mini-variant="mini"
@@ -51,7 +50,6 @@
       </v-list-item>
     </v-list>
   </v-navigation-drawer>
-  <!--------------------------------->
 </template>
 
 <script>
@@ -68,7 +66,7 @@ export default {
     items: [
       { title: "Dashboard", icon: "mdi-home-city", route: "/dashboard" },
       { title: "Profil", icon: "mdi-account", route: "/profile" },
-      { title: "Utilisateurs", icon: "mdi-account-group-outline" },
+      { title: "Utilisateurs", icon: "mdi-account-group-outline", route: "/users" },
       { title: "Paramètres", icon: "mdi-cog", route: "/settings" },
       { title: "Crypto", icon: "mdi-bitcoin", route: "/crypto" },
     ],
